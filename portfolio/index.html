@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Your Name — Frontend Developer / Designer. Portfolio showcasing projects, skills and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative animated gradient blobs -->
+<div class="bg-blobs" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<!-- nav -->
+<header class="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="#hero">YourName</a>
+    <nav id="mainNav" class="nav">
+      <ul>
+        <li><a href="#about" data-link>About</a></li>
+        <li><a href="#skills" data-link>Skills</a></li>
+        <li><a href="#projects" data-link>Projects</a></li>
+        <li><a href="#resume" data-link>Resume</a></li>
+        <li><a href="#contact" data-link>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌓</button>
+      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile overlay nav -->
+<div id="mobileMenu" class="mobile-menu" hidden>
+  <nav>
+    <ul>
+      <li><a href="#about" data-link>About</a></li>
+      <li><a href="#skills" data-link>Skills</a></li>
+      <li><a href="#projects" data-link>Projects</a></li>
+      <li><a href="#resume" data-link>Resume</a></li>
+      <li><a href="#contact" data-link>Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section id="hero" class="hero container">
+    <div class="hero-left">
+      <h1 class="headline">Hi, I’m <span class="accent">Your Name</span></h1>
+      <p class="sub">I build modern, accessible websites & web apps — frontend engineer with a design eye.</p>
+      <div class="hero-ctas">
+        <a class="btn primary" href="#projects" data-link>See Projects</a>
+        <a class="btn ghost" href="#contact" data-link>Get in touch</a>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+      </div>
+
+      <div class="socials small">
+        <a href="#" aria-label="GitHub" title="GitHub" class="social">GH</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn" class="social">LI</a>
+        <a href="#" aria-label="Dribbble" title="Dribbble" class="social">DB</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <img src="https://via.placeholder.com/340x340.png?text=Your+Photo" alt="Your Name" class="profile-photo">
+        <div class="profile-meta">
+          <h3>Your Name</h3>
+          <p class="muted">Frontend Engineer — React / JS / UI</p>
+          <div class="badges">
+            <span class="badge">Open to work</span>
+            <span class="badge">Remote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container reveal">
+    <div class="section-grid">
+      <div>
+        <h2>About me</h2>
+        <p>I’m a frontend developer focused on building performant, accessible, and delightful user experiences. I love turning design into fast, maintainable code and learning new libraries and patterns.</p>
+        <ul class="list">
+          <li>Experience: 4+ years building web products</li>
+          <li>Tools: React, TypeScript, Vite, Tailwind, CSS-in-JS</li>
+          <li>Design: Figma, accessibility-first, component-driven design</li>
+        </ul>
+        <p><strong>Working on:</strong> a personal design-system and an e-commerce PWA.</p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p class="muted">Email me at <a href="mailto:you@domain.com">you@domain.com</a> or use the form below.</p>
+        <div class="contact-cards">
+          <div class="cc">
+            <strong>Location</strong><span>Chennai, India</span>
+          </div>
+          <div class="cc">
+            <strong>Availability</strong><span>Open to freelance & remote roles</span>
+          </div>
+          <div class="cc">
+            <strong>Languages</strong><span>English, Tamil</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container reveal">
+    <h2>Skills</h2>
+    <p class="muted">Core competencies and tech I use daily.</p>
+    <div class="skill-grid">
+      <div class="skill">
+        <strong>Frontend</strong>
+        <div class="skill-tags">
+          <span>HTML</span><span>CSS</span><span>JS</span><span>React</span><span>TypeScript</span>
+        </div>
+      </div>
+      <div class="skill">
+        <strong>Styling</strong>
+        <div class="skill-tags"><span>Tailwind</span><span>CSS Modules</span><span>Sass</span></div>
+      </div>
+      <div class="skill">
+        <strong>Design</strong>
+        <div class="skill-tags"><span>Figma</span><span>Prototyping</span><span>Accessibility</span></div>
+      </div>
+      <div class="skill">
+        <strong>Infra</strong>
+        <div class="skill-tags"><span>Vercel</span><span>Netlify</span><span>GitHub</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container reveal">
+    <div class="section-head">
+      <h2>Selected Projects</h2>
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="webapp">Web Apps</button>
+        <button class="chip" data-filter="ui">UI / Design</button>
+        <button class="chip" data-filter="pwa">PWA</button>
+      </div>
+    </div>
+
+    <div id="projectGrid" class="project-grid">
+      <!-- Example project cards (replace with your projects) -->
+      <article class="project card" data-cat="webapp" data-id="p1">
+        <img src="https://via.placeholder.com/800x500.png?text=Project+1" alt="Project 1">
+        <div class="card-body">
+          <h3>Project One</h3>
+          <p class="muted">A modern dashboard built with React & D3 for data visualization.</p>
+          <div class="meta">
+            <span class="tag">React</span>
+            <button class="btn-sm view" data-id="p1">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project card" data-cat="ui" data-id="p2">
+        <img src="https://via.placeholder.com/800x500.png?text=Project+2" alt="Project 2">
+        <div class="card-body">
+          <h3>Design System</h3>
+          <p class="muted">Component library and tokens used across multiple products.</p>
+          <div class="meta">
+            <span class="tag">Figma</span>
+            <button class="btn-sm view" data-id="p2">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project card" data-cat="pwa" data-id="p3">
+        <img src="https://via.placeholder.com/800x500.png?text=Project+3" alt="Project 3">
+        <div class="card-body">
+          <h3>PWA Shop</h3>
+          <p class="muted">Offline-capable e-commerce prototype with fast loading UX.</p>
+          <div class="meta">
+            <span class="tag">PWA</span>
+            <button class="btn-sm view" data-id="p3">View</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="section container reveal">
+    <h2>Resume</h2>
+    <p class="muted">Download a PDF or view highlights below.</p>
+    <div class="resume-grid">
+      <div class="card">
+        <h3>Experience</h3>
+        <ul>
+          <li><strong>Company A</strong> — Senior Frontend Engineer (2023–Present)</li>
+          <li><strong>Company B</strong> — Frontend Engineer (2020–2023)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Education</h3>
+        <p>BS in Computer Science — University Name (2016–2020)</p>
+      </div>
+    </div>
+    <a class="btn primary" href="resume.pdf" download>Download Full Resume</a>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section container reveal">
+    <h2>Testimonials</h2>
+    <div class="test-grid">
+      <blockquote class="quote card">
+        <p>“Great to work with — delivered quickly and with attention to detail.”</p>
+        <footer>— Product Manager, Company A</footer>
+      </blockquote>
+      <blockquote class="quote card">
+        <p>“Highly skilled frontend engineer and a great team player.”</p>
+        <footer>— CTO, Startup B</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container reveal">
+    <h2>Contact</h2>
+    <p class="muted">I’m available for freelance and full-time opportunities. Send a message below.</p>
+
+    <form id="contactForm" class="contact-form" action="mailto:you@domain.com" method="post" enctype="text/plain">
+      <div class="form-row">
+        <input name="name" type="text" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Your email" required>
+      </div>
+      <input name="subject" type="text" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <div class="form-row">
+        <button type="submit" class="btn primary">Send</button>
+        <button type="reset" class="btn ghost">Reset</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal" hidden>
+  <div class="modal-inner">
+    <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
